@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>夸夸狗哥 - 传递正能量</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</head>
+<body class="light-mode">
+  <!-- 背景微光效果 -->
+  <div class="background-glow">
+    <div class="glow-blob glow-primary"></div>
+    <div class="glow-blob glow-secondary"></div>
+    <div class="glow-blob glow-tertiary"></div>
+  </div>
+  
+  <div class="theme-toggle">
+    <button id="theme-switch">
+      <i class="fas fa-moon"></i>
+    </button>
+  </div>
+  
+  <div class="container">
+    <header class="page-header">
+      <div class="header-content">
+        <h1 class="site-title">夸夸狗哥</h1>
+        <p class="site-subtitle">每天一句暖心话，传递满满正能量</p>
+      </div>
+    </header>
+    
+    <main id="main-section">
+      <div class="emoji-container">
+        <div class="emoji-wrapper">
+          <img src="viggo.jpeg" alt="Viggo头像" class="emoji-avatar">
+        </div>
+      </div>
+      
+      <div class="compliment-card">
+        <div class="compliment" id="compliment-text">
+          <!-- 赞美语句将在这里显示 -->
+        </div>
+        <button class="refresh-btn" id="refresh-btn">
+          <i class="fas fa-sync-alt"></i> 再来一条
+        </button>
+      </div>
+    </main>
+    
+    <footer class="simple-footer">
+      <p>用❤️制作 | 为最棒的狗哥精心打造</p>
+    </footer>
+  </div>
+  
+  <script src="compliments.js"></script>
+  <script src="script.js"></script>
+</body>
+</html> 
